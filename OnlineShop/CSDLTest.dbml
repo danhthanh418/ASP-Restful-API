@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CSDLTest" Class="CSDLTestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.;Initial Catalog=CSDLTest;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="CSDLTestConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DanhMuc" Member="DanhMucs">
+    <Type Name="DanhMuc">
+      <Column Name="MaDM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="DanhMuc_SanPham" Member="SanPhams" ThisKey="MaDM" OtherKey="DanhMuc" Type="SanPham" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SanPham" Member="SanPhams">
+    <Type Name="SanPham">
+      <Column Name="MaSP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenSP" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DanhMuc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="DanhMuc_SanPham" Member="DanhMuc1" ThisKey="DanhMuc" OtherKey="MaDM" Type="DanhMuc" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
