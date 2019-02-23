@@ -2,23 +2,23 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="CSDLTest">
   <DataContextMoniker Name="/CSDLTestDataContext" />
   <nestedChildShapes>
-    <classShape Id="f3829bf1-7ced-487e-959e-8470ca5d7f8a" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+    <classShape Id="4b07d9e6-b32e-4c76-9491-a386ca5ee789" absoluteBounds="2.5, 1.25, 2, 1.1939925130208338">
       <DataClassMoniker Name="/CSDLTestDataContext/DanhMuc" />
       <nestedChildShapes>
-        <elementListCompartment Id="cdd43d9c-ed0b-4e1b-9a4f-fdfa93144f62" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2fba7764-6ecc-4d4e-9187-31f6ea2e28cf" absoluteBounds="2.515, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="185b7208-81e1-4739-8ac0-3d3e205d6356" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+    <classShape Id="455f488f-80c3-4535-a5ef-e752fcd75a65" absoluteBounds="5.25, 1, 2, 1.5785953776041666">
       <DataClassMoniker Name="/CSDLTestDataContext/SanPham" />
       <nestedChildShapes>
-        <elementListCompartment Id="1c0bc61a-89ef-4cb2-8901-25f460189d14" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="3874e6b9-57d5-42fe-beec-300ffd02ad86" absoluteBounds="5.2650000000000006, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(4.5 : 1.84699625651042); (5.25 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/CSDLTestDataContext/DanhMuc/DanhMuc_SanPham" />
       <nodes>
-        <classShapeMoniker Id="f3829bf1-7ced-487e-959e-8470ca5d7f8a" />
-        <classShapeMoniker Id="185b7208-81e1-4739-8ac0-3d3e205d6356" />
+        <classShapeMoniker Id="4b07d9e6-b32e-4c76-9491-a386ca5ee789" />
+        <classShapeMoniker Id="455f488f-80c3-4535-a5ef-e752fcd75a65" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

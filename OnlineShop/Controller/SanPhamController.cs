@@ -35,6 +35,19 @@ namespace OnlineShop.Controller
             return sp;
         }
 
+
+        [HttpGet]
+
+        public List<SanPham> DanhSachSanPhamTheoDanhMuc( int maDM)
+        {
+            CSDLTestDataContext context = new CSDLTestDataContext();
+            List<SanPham> dsSP = context.SanPhams.Where(x => x.DanhMuc == maDM).ToList();
+            foreach( SanPham sp in dsSP)
+            {
+                sp.DanhMuc = null;
+            }
+            return dsSP;
+        }
         [HttpGet]
 
         public List<SanPham> TimSanPhamTrongKhoangDonGia(int bd, int kt)
